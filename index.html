@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="left">
+           
+            <img src="" width="655px" height="560px" id="img" draggable="true">
+            <h2 id="h2">upload any photo</h2>
+            <input type="file" name="file" id="file" accept="image/*" />
+        </div>
+        <div class="right">
+        <br>  <label for="width">Width : </label>  <input type="tel" placeholder=">than 650px" id="num" name="width"><span> px </span><br>
+        <br><label for="height">Height : </label><input type="tel" id="num1" placeholder=">than 560px" name="height"><span> px </span><br>
+        <br><label for="color" >Background Color : </label><input type="color" name="color" id="color"><br>
+            <hr>
+            <h3>Filters</h3>
+            <span >Blur  </span><input type="range" name="" id="blur" min="0.1" max="20" value="0" ><br><br>
+            <span>Brightness </span><input type="range" name="" id="brightness" min="-0.4" max="15"  value="0"><br><br>
+            <span>Contrast </span><input type="range" name="" id="contrast" min="-0.05" max="20" value="0"><br><br>
+            <span>Grayscale  </span><input type="range" name="" id="grayscale" min="0" max="20 " value="0"><br><br>
+            <span>Hue-rotate  </span><input type="range" name="" id="hue" min="0" max="700" value="0"><br><br>
+            <span>Invert  </span><input type="range" name="" id="invert" min="0" max="5" value="0"><br><br>
+            <span>Opacity </span><input type="range" name="" id="opacity" min="-0.8" max="0.5" value="-0.8"><br><br>
+            <span> Saturate  </span><input type="range" name="" id="saturate" min="-0.5" max="300" value="0"><br><br>
+            <span> Sepia  </span><input type="range" name="" id="sepia" min="0" max="50" value="0"><br><br>
+            <hr>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+    
+</body>
+</html>
